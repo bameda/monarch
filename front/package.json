@@ -1,0 +1,20 @@
+{
+  "name": "monarch",
+  "private": true,
+  "version": "0.0.1",
+  "description": "...like a monarch butterfly...",
+  "homepage": "https://github.com/bameda/monarch",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bameda/monarch.git"
+  },
+  "license": "AGPL-3.0",
+  "author": [
+    "David Barragán Merino <bameda@dbarragan.com> (https://github.com/bameda)"
+  ],
+  "devDependencies": {
+  },
+  "scripts": {
+    "postinstall": "bower install"
+  }
+}

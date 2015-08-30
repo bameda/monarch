@@ -1,0 +1,26 @@
+{
+  "name": "monarch",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Quotes, quotes everywhere!!!",
+  "homepage": "https://github.com/bameda/monarch",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bameda/monarch.git"
+  },
+  "license": "AGPL-3.0",
+  "author": [
+    "David Barragán Merino <bameda@dbarragan.com> (https://github.com/bameda)"
+  ],
+  "dependencies": {
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/vendor",
+    "tests"
+  ],
+  "devDependencies": {
+  }
+}

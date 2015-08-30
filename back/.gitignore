@@ -1,0 +1,11 @@
+*.pyc
+*__pycache__*
+settings/local.py
+media
+static
+*.mo
+logs
+.venv
+.coverage
+.cache
+.\#*
