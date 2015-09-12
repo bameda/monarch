@@ -18,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 ADMINS = (
-    ("David Barragán", "davi.barragan@kaleidos.net"),
+    ("David Barragán", "bameda@dbarragan.com"),
 )
 
 # SECURITY WARNING: keep the secret key used in production secret!
@@ -73,10 +73,17 @@ INSTALLED_APPS = (
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+
+    "django_pgjson",
+    "rest_framework",
+
+    "monarch",
+    "monarch.common",
 )
 
 MIDDLEWARE_CLASSES = (
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "monarch.common.middleware.cors.CorsMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -106,3 +113,6 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "wsgi.application"
+
+
+from .api import *
