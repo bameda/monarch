@@ -16,6 +16,17 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 
+from .routers import router
+
+
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
+    # Django admin panel
+    url(r"^admin/", include(admin.site.urls)),
+
+    # DJRF web interface
+    url(r"^api-auth/", include("rest_framework.urls", namespace="rest_framework")),
+
+    # API
+    url(r'^api/v1/', include(router.urls)),
 ]
+
