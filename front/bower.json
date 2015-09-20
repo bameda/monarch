@@ -1,7 +1,7 @@
 {
   "name": "monarch",
-  "private": true,
   "version": "0.0.1",
+  "private": true,
   "description": "Quotes, quotes everywhere!!!",
   "homepage": "https://github.com/bameda/monarch",
   "repository": {
@@ -13,14 +13,24 @@
     "David Barragán Merino <bameda@dbarragan.com> (https://github.com/bameda)"
   ],
   "dependencies": {
+    "angular-animate": "~1.4.0",
+    "angular-cookies": "~1.4.0",
+    "angular-touch": "~1.4.0",
+    "angular-sanitize": "~1.4.0",
+    "jquery": "~2.1.4",
+    "angular-route": "~1.4.0",
+    "angular-material": "~0.9.7",
+    "malarkey": "yuanqing/malarkey#~1.3.0",
+    "toastr": "~2.1.1",
+    "moment": "~2.10.3",
+    "animate.css": "~3.3.0",
+    "angular": "~1.4.0"
   },
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "app/vendor",
-    "tests"
-  ],
   "devDependencies": {
+    "angular-mocks": "~1.4.0"
+  },
+  "resolutions": {
+    "jquery": "~2.1.4",
+    "angular": "~1.4.0"
   }
 }
