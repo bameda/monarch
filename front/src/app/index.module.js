@@ -10,7 +10,7 @@ import WebDevTecService from '../app/components/webDevTec/webDevTec.service';
 import NavbarDirective from '../app/components/navbar/navbar.directive';
 import MalarkeyDirective from '../app/components/malarkey/malarkey.directive';
 
-angular.module('front', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ngRoute', 'ngMaterial'])
+angular.module('monarch', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'restangular', 'ngRoute', 'ngMaterial'])
     .constant('malarkey', malarkey)
     .constant('toastr', toastr)
     .constant('moment', moment)
