@@ -7,6 +7,7 @@
     "repository": {
         "type": "git",
         "url": "git@github.com:bameda/monarch.git"
+    },
     "license": "AGPL-3.0",
     "author": [
         "David Barragán Merino <bameda@dbarragan.com> (https://github.com/bameda)"
