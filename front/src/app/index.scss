@@ -15,29 +15,6 @@ html {
     flex-direction: row;
 }
 
-.thumbnail {
-    height: 200px;
-
-    img.pull-right {
-        width: 50px;
-    }
-}
-
-
-.techs {
-    display: flex;
-    flex-flow: row wrap;
-
-    md-card {
-        width: 30%;
-
-        img.pull-right {
-            float: right;
-            width: 50px;
-        }
-    }
-}
-
 /**
  *  Do not remove this comments bellow. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

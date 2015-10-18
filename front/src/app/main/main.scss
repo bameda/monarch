@@ -1,0 +1,17 @@
+.techs {
+    display: flex;
+    flex-flow: row wrap;
+
+    md-card {
+        width: 30%;
+
+        .thumbnail {
+            height: 200px;
+
+            img.pull-right {
+                float: right;
+                width: 50px;
+            }
+        }
+    }
+}
