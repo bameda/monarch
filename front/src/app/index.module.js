@@ -1,26 +1,38 @@
-/* global malarkey:false, toastr:false, moment:false */
+/* global _:false, moment:false */
 import config from './index.config';
-
 import routerConfig from './index.route';
-
 import runBlock from './index.run';
+
+/* Controllers */
 import MainController from './main/main.controller';
-import GithubContributorService from '../app/components/githubContributor/githubContributor.service';
-import WebDevTecService from '../app/components/webDevTec/webDevTec.service';
+
+/* Directives */
 import NavbarDirective from '../app/components/navbar/navbar.directive';
-import MalarkeyDirective from '../app/components/malarkey/malarkey.directive';
 
-angular.module('monarch', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'restangular', 'ngRoute', 'ngMaterial'])
-    .constant('malarkey', malarkey)
-    .constant('toastr', toastr)
+
+const modules = [
+    'ngAnimate',
+    'ngCookies',
+    'ngTouch',
+    'ngSanitize',
+
+    'restangular',
+    'ngRoute',
+    'ngMaterial'
+];
+
+angular.module('monarch', modules)
+    .constant('_', _)
     .constant('moment', moment)
+
     .config(config)
-
     .config(routerConfig)
-
     .run(runBlock)
-    .service('githubContributor', GithubContributorService)
-    .service('webDevTec', WebDevTecService)
+
+    /* Services */
+
+    /* Controllers */
     .controller('MainController', MainController)
-    .directive('acmeNavbar', () => new NavbarDirective())
-    .directive('acmeMalarkey', () => new MalarkeyDirective(malarkey));
+
+    /* Directives */
+    .directive('moNavbar', () => new NavbarDirective());
