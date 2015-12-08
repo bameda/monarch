@@ -13,23 +13,9 @@
     "David Barragán Merino <bameda@dbarragan.com> (https://github.com/bameda)"
   ],
   "dependencies": {
-    "angular": "~1.4.0",
-    "angular-animate": "~1.4.0",
-    "angular-cookies": "~1.4.0",
-    "angular-touch": "~1.4.0",
-    "angular-sanitize": "~1.4.0",
-    "restangular": "~1.5.1",
-    "angular-route": "~1.4.0",
-    "angular-material": "~0.9.7",
-    "jquery": "~2.1.4",
-    "moment": "~2.10.3",
-    "lodash": "~3.10.1"
   },
   "devDependencies": {
-    "angular-mocks": "~1.4.0"
   },
   "resolutions": {
-    "jquery": "~2.1.4",
-    "angular": "~1.4.0"
   }
 }
