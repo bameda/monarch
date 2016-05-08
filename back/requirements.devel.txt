@@ -1,6 +1,0 @@
--r requirements.txt
-
-ipython
-ipdb
-
-django-sampledatahelper==0.4

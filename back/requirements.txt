@@ -1,4 +1,0 @@
-Django==1.9.4
-psycopg2==2.6.1
-djangorestframework==3.3.2
-django-jinja==2.1.2
